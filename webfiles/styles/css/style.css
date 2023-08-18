@@ -1,0 +1,412 @@
+@font-face {
+  font-family: "Merriweather";
+  src: url(../../../src/fonts/Merriweather-Regular.ttf);
+}
+@font-face {
+  font-family: "Source";
+  src: url(../../../src/fonts/SourceSansPro-Regular.otf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Source", Verdana, Geneva, Tahoma, sans-serif;
+}
+body header {
+  background-color: #61A8BC;
+  padding: 1.25rem 5rem;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+body header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+body header nav img {
+  width: 191px;
+  height: 145px;
+}
+body header nav ul {
+  list-style: none;
+  display: flex;
+}
+body header nav ul li {
+  display: flex;
+}
+body header nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 0.625rem 1.5625rem;
+  font-size: 1.5rem;
+}
+body header nav ul li a:active {
+  color: #660000;
+}
+body main div.first {
+  background-color: #61A8BC;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 3.125rem;
+}
+body main div.first section {
+  display: flex;
+  flex-direction: column;
+  max-width: 921px;
+  padding-left: 5rem;
+  padding-bottom: 3.125rem;
+}
+body main div.first section h1 {
+  font-size: 4.0625rem;
+  font-weight: 400;
+  font-family: "Merriweather", Verdana, Geneva, Tahoma, sans-serif;
+  color: #ffffff;
+}
+body main div.first section p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #ffffff;
+  margin: 1.875rem 0;
+}
+body main div.second {
+  background-color: #660000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 11.5625rem 5rem;
+}
+body main div.second img {
+  width: 244px;
+  height: 185px;
+}
+body main div.second h2 {
+  color: #ffffff;
+  margin: 1.875rem;
+}
+body main div.second p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #ffffff;
+}
+body main h2 {
+  font-size: 4.0625rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  color: #353535;
+  padding: 1.875rem 5rem;
+}
+body main div.third {
+  display: flex;
+  min-width: 1400px;
+  width: 100%;
+}
+body main div.third img {
+  object-fit: fill;
+  height: 540px;
+}
+body main div.third img:nth-child(2) {
+  width: 70%;
+}
+body main div.third div {
+  display: flex;
+  position: relative;
+}
+body main div.third div img {
+  width: 100%;
+}
+body main div.third div h3 {
+  position: absolute;
+  z-index: 50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+body main div.third div h3 strong {
+  font-weight: 700;
+}
+body main div.third div h3:first-of-type {
+  right: -40px;
+  top: 20px;
+  color: #ffffff;
+  opacity: 0.75;
+  background-color: #660000;
+}
+body main div.third div h3:last-of-type {
+  right: -180px;
+  top: 160px;
+  color: #660000;
+  opacity: 0.75;
+  background-color: #ffffff;
+}
+body main div.fourth {
+  display: flex;
+  min-width: 1400px;
+  width: 100%;
+}
+body main div.fourth img {
+  height: 540px;
+}
+body main div.fourth img:nth-child(2) {
+  width: 30%;
+}
+body main div.fourth div {
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+body main div.fourth div img {
+  width: 100%;
+}
+body main div.fourth div h3 {
+  position: absolute;
+  z-index: 50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+body main div.fourth div h3 strong {
+  font-weight: 700;
+}
+body main div.fourth div h3:first-of-type {
+  right: -40px;
+  bottom: 20px;
+  color: #61A8BC;
+  opacity: 0.75;
+  background-color: #ffffff;
+  text-align: center;
+}
+body main div.fourth div h3:last-of-type {
+  right: -180px;
+  top: 160px;
+  color: #ffffff;
+  opacity: 0.75;
+  background-color: #61A8BC;
+}
+body main div.fourth div div.balad:first-of-type {
+  position: absolute;
+  z-index: 50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 400;
+  right: -40px;
+  bottom: 20px;
+  color: #61A8BC;
+  opacity: 0.75;
+  background-color: #ffffff;
+  text-align: center;
+  flex-direction: column;
+}
+body main div.fourth div div.balad:first-of-type strong {
+  font-weight: 700;
+}
+body footer {
+  background-color: #61A8BC;
+  display: flex;
+  width: 100%;
+}
+body footer div.footer {
+  display: flex;
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: space-between;
+  padding-top: 2.5rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+body footer div.footer div {
+  display: flex;
+  flex-direction: column;
+}
+body footer div.footer div.first {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 0;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-self: stretch;
+}
+body footer div.footer div.first div:first-of-type {
+  flex-direction: row;
+  width: 100%;
+}
+body footer div.footer div.first div:first-of-type section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-right: 0.625rem;
+  width: 50%;
+}
+body footer div.footer div.first div:first-of-type section h3 {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+body footer div.footer div.first div:first-of-type section a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+body footer div.footer div.first div:last-of-type {
+  padding-bottom: 2.5rem;
+  margin-top: 3.6875rem;
+}
+body footer div.footer div.first div:last-of-type p {
+  font-size: 18;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+body footer div.footer div.second {
+  flex: 1 0 0;
+  background-color: #D0E4EB;
+  padding: 2.5rem;
+}
+body footer div.footer div.second p {
+  color: #660000;
+  font-size: 1.5rem;
+  text-align: center;
+}
+body footer div.footer div.second p span {
+  font-weight: 700;
+}
+body footer div.footer div.second input {
+  max-width: 460px;
+  width: 100%;
+  margin: 1.875rem auto;
+  padding: 0.375rem 0.625rem;
+}
+body footer div.footer div.second input::placeholder {
+  color: #b0b0b0;
+}
+body footer div.footer div.second button {
+  max-width: 152px;
+  max-height: 50px;
+  margin: 0 auto;
+  display: flex;
+  padding: 10px 35px;
+  align-items: flex-start;
+  gap: 10px;
+  font-family: "Source", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+body .btn {
+  background-color: #660000;
+  border: 0;
+  color: #ffffff;
+}
+body .btn a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+body .btn:hover {
+  background-color: #ffffff;
+  color: #660000;
+  border: #660000 1px solid;
+}
+body .btn:hover a {
+  color: #660000;
+}
+body .btn.first {
+  max-width: 178px;
+}
+body .btn.first a {
+  padding: 0.625rem 2.1875rem;
+}
+body #backToTopContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #b0b0b0;
+  -webkit-text-stroke: 1px black;
+  -webkit-text-fill-color: white;
+  opacity: 0.75;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  font-size: 3rem;
+  animation: scrollBtn 1s 0s 1 linear;
+}
+body #backToTopContainer:hover {
+  opacity: 1;
+}
+body #backToTop:hover {
+  animation: animateBtn 1s 0s infinite ease-in-out;
+}
+@keyframes scrollBtn {
+  0% {
+    margin-bottom: -4rem;
+  }
+  100% {
+    margin-bottom: 0;
+  }
+}
+@keyframes animateBtn {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+body .fondue {
+  animation: fondue 3s ease-in-out;
+}
+body .loading {
+  animation: respiration 1s infinite ease-in-out;
+}
+@keyframes fondue {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes respiration {
+  0%, 100% {
+    scale: 1;
+  }
+  50% {
+    scale: 0.9;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
