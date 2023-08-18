@@ -15,6 +15,7 @@
 body {
   font-size: 16px;
   font-family: "Source", Verdana, Geneva, Tahoma, sans-serif;
+  /* Icon 3 */
 }
 body header {
   background-color: #61A8BC;
@@ -51,6 +52,10 @@ body header nav ul li a {
 }
 body header nav ul li a:active {
   color: #660000;
+}
+body main {
+  display: flex;
+  flex-direction: column;
 }
 body main div.first {
   background-color: #61A8BC;
@@ -107,15 +112,12 @@ body main h2 {
 }
 body main div.third {
   display: flex;
-  min-width: 1400px;
+  align-self: stretch;
   width: 100%;
 }
 body main div.third img {
-  object-fit: fill;
+  object-fit: cover;
   height: 540px;
-}
-body main div.third img:nth-child(2) {
-  width: 70%;
 }
 body main div.third div {
   display: flex;
@@ -154,12 +156,18 @@ body main div.third div h3:last-of-type {
   opacity: 0.75;
   background-color: #ffffff;
 }
+body main div.third div:first-of-type {
+  width: 35%;
+}
+body main div.third div:last-of-type {
+  flex: 1;
+}
 body main div.fourth {
   display: flex;
-  min-width: 1400px;
-  width: 100%;
+  align-self: stretch;
 }
 body main div.fourth img {
+  object-fit: cover;
   height: 540px;
 }
 body main div.fourth img:nth-child(2) {
@@ -226,6 +234,12 @@ body main div.fourth div div.balad:first-of-type {
 }
 body main div.fourth div div.balad:first-of-type strong {
   font-weight: 700;
+}
+body main div.fourth div:first-of-type {
+  flex: 1;
+}
+body main div.fourth div:last-of-type {
+  width: 35%;
 }
 body footer {
   background-color: #61A8BC;
@@ -342,10 +356,11 @@ body .btn:hover a {
   color: #660000;
 }
 body .btn.first {
+  display: flex;
   max-width: 178px;
-}
-body .btn.first a {
   padding: 0.625rem 2.1875rem;
+  font-size: 1.5rem;
+  line-height: 30px;
 }
 body #backToTopContainer {
   display: flex;
@@ -407,6 +422,116 @@ body .loading {
   50% {
     scale: 0.9;
   }
+}
+body .hidden {
+  display: none;
+}
+body .hMenu {
+  top: 50%;
+  left: 10%;
+  width: 50px;
+  height: 6px;
+  background: #FCFCFC;
+  position: absolute;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+}
+body .hMenu:before {
+  top: -16px;
+}
+body .hMenu:after {
+  top: 16px;
+}
+body .hmContainer {
+  position: fixed;
+  top: 50px;
+  right: 100px;
+  z-index: 200;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+}
+body .hMenu:before,
+body .hMenu:after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 6px;
+  background: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+}
+body .hmContainer.active .hMenu {
+  background: rgba(0, 0, 0, 0);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
+}
+body .hmContainer.active .hMenu:before {
+  top: 0;
+  transform: rotate(135deg);
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+body .hmContainer.active .hMenu:after {
+  top: 0;
+  transform: rotate(225deg);
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+body .hMenuList {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #660000;
+}
+body .hMenuList li a:hover {
+  color: #61A8BC;
+}
+body .appear {
+  animation: appear 1s 0s 1 linear;
+}
+@keyframes appear {
+  0% {
+    scale: 0;
+  }
+  50% {
+    transform: rotate3d(1, 5, -1, 180deg);
+  }
+  70% {
+    scale: 1.3;
+  }
+  100% {
+    scale: 1;
+    transform: rotate3d(1, 1, 1, 360deg);
+  }
+}
+body .modalBg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 500;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+body .modalBg .modalContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #660000;
+  max-width: 500px;
+  padding: 2rem;
+}
+body .modalBg .modalContainer .modalContent {
+  color: #ffffff;
+  padding: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */

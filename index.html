@@ -12,6 +12,8 @@
     <script src="./webfiles/js/navbar.js" defer></script>
     <script src="./webfiles/js/btnTop.js" defer></script>
     <script src="./webfiles/js/lazy.js" defer></script>
+    <script src="./webfiles/js/onScroll.js" defer></script>
+    <script src="./webfiles/js/modal.js" defer></script>
     <script src="https://kit.fontawesome.com/b94fcc4ff9.js" crossorigin="anonymous"></script>
     <title>Esprit Libre</title>
 </head>
@@ -20,7 +22,7 @@
     <header>
         <nav>
             <img src="./src/images/Logo.png" alt="Logo de la société Esprit Libre" id="logo1">
-            <ul>
+            <ul id="menu">
                 <li><a href="#" title="Retourner à la page d'accueil">Accueil</a></li>
                 <li><a href="#" title="Voir nos dernières actualités">Actualités</a></li>
                 <li><a href="#" title="Découvrez notre équipes au complet">Notre équipe</a></li>
@@ -42,8 +44,7 @@
                     Perspiciatis aspernatur consequatur minima sunt eaque, odit saepe magnam eligendi deserunt, corrupti
                     ad nisi qui nam quo quasi corporis aliquid ullam neque, porro ipsam eveniet sed. Ducimus reiciendis
                     cumque eaque!</p>
-                <button class="btn first"><a href="#"
-                        title="En savoir plus sur notre centre équestre">En&nbsp;savoir&nbsp;+</a></button>
+                <button class="btn first" id="btnPlus">En&nbsp;savoir&nbsp;+</button>
             </section>
             <div>
                 <img src="./src/images/1x1.png" data-src="./src/images/header_horse.png" alt="Image d'illustration représentant un cheval" id="pic1">
@@ -64,7 +65,7 @@
                 <h3>cours&nbsp;<strong>cso/cce</strong></h3>
                 <h3>cours&nbsp;<strong>cross&nbsp;+</strong></h3>
             </div>
-            <img  src="./src/images/1x1.png" data-src="./src/images/cross2.jpg" alt="Image d'un jocker et son cheval en train de faire du CROSS" id="pic3" class="slide-animation right">
+            <div><img  src="./src/images/1x1.png" data-src="./src/images/cross2.jpg" alt="Image d'un jocker et son cheval en train de faire du CROSS" id="pic3" class="slide-animation right"></div>
         </div>
         <div class="fourth">
             <div>
@@ -76,7 +77,9 @@
                 </div>
                 <h3><strong>cours&nbsp;enfants</strong></h3>
             </div>
-            <img  src="./src/images/1x1.png" data-src="./src/images/enfants.jpg" alt="Image d'un enfant sur un poney" id="pic5" class="slide-animation right">
+            <div>
+                <img  src="./src/images/1x1.png" data-src="./src/images/enfants.jpg" alt="Image d'un enfant sur un poney" id="pic5" class="slide-animation right">
+            </div>
         </div>
     </main>
     <footer>
